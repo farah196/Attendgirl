@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable
+                name="viewLogin"
+                type="com.example.farahal_kiswani.attendgirl.login.LoginViewModel"/>
+
+    </data>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    >
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/mBackground"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/back"
+        />
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_email_layout"
+                android:layout_below="@+id/mBackground"
+                android:layout_width="300dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@={viewLogin.email}"
+                    android:hint="أدخل البريد الإلكتروني"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_password_layout"
+                android:layout_centerInParent="true"
+                android:layout_width="300dp"
+
+                android:layout_below="@+id/text_email_layout"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:text="@={viewLogin.password}"
+                    android:hint="أدخل كلمة السر"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_password_layout"
+                android:layout_centerInParent="true"
+                android:textColor="#ffff"
+                android:text="تسجيل الدخول"
+                android:onClick="@{(v)->viewLogin.login(v,viewLogin.email,viewLogin.password)}"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+                android:id="@+id/mProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="@{viewLogin.loading ? View.VISIBLE : View.GONE}"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+</layout>

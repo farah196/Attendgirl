@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+                name="viewList"
+                type="com.example.farahal_kiswani.attendgirl.main.NameViewModel"/>
+
+    </data>
+
+
+
+
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            tools:openDrawer="end"
+    >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAccent"/>
+            <Button
+
+                    android:id="@+id/mSaveAttend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/colorPrimary"
+                    android:textColor="#ffff"
+                    android:text="حفظ"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignBottom="@+id/toolbar_main"
+                    android:layout_marginStart="296dp"
+                    android:layout_marginBottom="4dp"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/mNameRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mSaveAttend"
+                app:adapter="@{viewList.adapter}"
+                app:data="@{viewList.data}"/>
+
+        </RelativeLayout>
+
+
+
+
+        <android.support.design.widget.NavigationView
+                android:id="@+id/navigation"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                app:headerLayout="@layout/nav_header_home"
+                app:itemTextColor="@color/colorPrimary"
+                app:menu="@menu/drawer_menu"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</layout>

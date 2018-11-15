@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "680082604634",
+    "firebase_url": "https://attend-500c7.firebaseio.com",
+    "project_id": "attend-500c7",
+    "storage_bucket": "attend-500c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680082604634:android:db0bfb551ab7b714",
+        "android_client_info": {
+          "package_name": "com.example.farahal_kiswani.attend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680082604634-oh02q2q4lg5k5454o5su8o266bl3lmot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farahal_kiswani.attend",
+            "certificate_hash": "ae64801c27ce0f3917cc4bc088ec97796caad956"
+          }
+        },
+        {
+          "client_id": "680082604634-2084p1hehiqadkivkofpooukqgjrrh90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZdWLkUbnWsLG_B-cQ6YHHLix1I5k5ERQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680082604634-2084p1hehiqadkivkofpooukqgjrrh90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680082604634:android:6766c031d5bfb412",
+        "android_client_info": {
+          "package_name": "com.example.farahal_kiswani.attendgirl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680082604634-63a5pj00na9vopikqqbjt5bsih8oeu5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farahal_kiswani.attendgirl",
+            "certificate_hash": "ae64801c27ce0f3917cc4bc088ec97796caad956"
+          }
+        },
+        {
+          "client_id": "680082604634-2084p1hehiqadkivkofpooukqgjrrh90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZdWLkUbnWsLG_B-cQ6YHHLix1I5k5ERQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680082604634-2084p1hehiqadkivkofpooukqgjrrh90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
